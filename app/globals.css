@@ -1,0 +1,262 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@config "../tailwind.config.ts";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Colors */
+  --background: hsl(var(--background));
+  --foreground: hsl(var(--foreground));
+  --card: hsl(var(--card));
+  --card-foreground: hsl(var(--card-foreground));
+  --popover: hsl(var(--popover));
+  --popover-foreground: hsl(var(--popover-foreground));
+  --primary: hsl(var(--primary));
+  --primary-foreground: hsl(var(--primary-foreground));
+  --secondary: hsl(var(--secondary));
+  --secondary-foreground: hsl(var(--secondary-foreground));
+  --muted: hsl(var(--muted));
+  --muted-foreground: hsl(var(--muted-foreground));
+  --accent: hsl(var(--accent));
+  --accent-foreground: hsl(var(--accent-foreground));
+  --destructive: hsl(var(--destructive));
+  --destructive-foreground: hsl(var(--destructive-foreground));
+  --border: hsl(var(--border));
+  --input: hsl(var(--input));
+  --ring: hsl(var(--ring));
+
+  /* Sidebar */
+  --sidebar: hsl(var(--sidebar));
+  --sidebar-foreground: hsl(var(--sidebar-foreground));
+  --sidebar-primary: hsl(var(--sidebar-primary));
+  --sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --sidebar-accent: hsl(var(--sidebar-accent));
+  --sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --sidebar-border: hsl(var(--sidebar-border));
+  --sidebar-ring: hsl(var(--sidebar-ring));
+
+  /* Charts */
+  --chart-1: hsl(var(--chart-1));
+  --chart-2: hsl(var(--chart-2));
+  --chart-3: hsl(var(--chart-3));
+  --chart-4: hsl(var(--chart-4));
+  --chart-5: hsl(var(--chart-5));
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Radii */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  /* Modern contrasting background */
+  --background: 220 15% 95%;
+  --foreground: 220 25% 8%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 220 25% 8%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 25% 8%;
+
+  /* Vibrant blue primary */
+  --primary: 210 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --primary-light: 210 80% 70%;
+  --primary-lighter: 210 50% 90%;
+
+  /* Contrasting secondary */
+  --secondary: 220 25% 8%;
+  --secondary-foreground: 0 0% 100%;
+
+  /* Enhanced muted tones */
+  --muted: 220 10% 90%;
+  --muted-foreground: 220 20% 40%;
+
+  /* Vibrant accent */
+  --accent: 45 100% 70%;
+  --accent-foreground: 220 25% 8%;
+
+  --destructive: 0 70% 65%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* Light borders */
+  --border: 210 25% 90%;
+  --input: 210 25% 92%;
+  --ring: 210 70% 55%;
+
+  --radius: 0.5rem;
+
+  --sidebar-background: 0 0% 98%;
+
+  --sidebar-foreground: 240 5.3% 26.1%;
+
+  --sidebar-primary: 240 5.9% 10%;
+
+  --sidebar-primary-foreground: 0 0% 98%;
+
+  --sidebar-accent: 240 4.8% 95.9%;
+
+  --sidebar-accent-foreground: 240 5.9% 10%;
+
+  --sidebar-border: 220 13% 91%;
+
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+  --background: 220 25% 8%;
+  --foreground: 220 15% 95%;
+
+  --card: 220 25% 10%;
+  --card-foreground: 220 15% 95%;
+
+  --popover: 220 25% 10%;
+  --popover-foreground: 220 15% 95%;
+
+  --primary: 210 100% 60%;
+  --primary-foreground: 0 0% 100%;
+  --primary-light: 210 60% 40%;
+  --primary-lighter: 210 40% 20%;
+
+  --secondary: 220 15% 95%;
+  --secondary-foreground: 220 25% 8%;
+
+  --muted: 220 15% 15%;
+  --muted-foreground: 220 15% 65%;
+
+  --accent: 45 100% 60%;
+  --accent-foreground: 220 25% 8%;
+
+  --destructive: 0 65% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 220 20% 20%;
+  --input: 220 20% 18%;
+  --ring: 210 70% 55%;
+  --sidebar-background: 240 5.9% 10%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+
+@layer base {
+
+  /* Custom gradients and effects */
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    /* background: black; */
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--primary-lighter)) 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glassmorphism effect */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Truck image hover effects */
+  .truck-hover {
+    transition: all 0.3s ease;
+  }
+
+  .truck-hover:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Smooth animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
