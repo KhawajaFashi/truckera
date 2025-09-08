@@ -29,7 +29,7 @@ const HeroSection = () => {
               <span className="text-gradient">Simplified</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed">
-              We move loads, so you don't have to. Dispatching made simple for owner-operators 
+              We move loads, so you don&apos;t have to. Dispatching made simple for owner-operators
               and fleet managers with real-time tracking, load matching, and 24/7 support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

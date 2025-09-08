@@ -13,7 +13,7 @@ const FeaturesSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Everything you need to manage your trucking operations efficiently. 
-            From load matching to real-time tracking, we've got you covered.
+            From load matching to real-time tracking, we&apos;ve got you covered.
           </p>
         </div>
 
