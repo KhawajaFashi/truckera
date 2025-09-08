@@ -23,7 +23,7 @@ const ContactSection = () => {
               <h3 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h3>
               <p className="text-muted-foreground mb-8">
                 Our team of dispatch professionals is available 24/7 to support your operations. 
-                Whether you need immediate assistance or want to learn more about our services, 
+                Whether you need immediate assistance or want to learn more about our services,
                 we're here to help.
               </p>
             </div>

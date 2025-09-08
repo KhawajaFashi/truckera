@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { aboutFeatures } from './data'
+import Image from "next/image";
 
 const AboutSection = () => {
   const features = aboutFeatures;
@@ -8,9 +9,11 @@ const AboutSection = () => {
     <section id="about" className="flex justify-center items-center py-16 lg:py-24 px-10  lg:px-32 bg-background ">
       {/* Image */}
       <div className="animate-fade-in lg:mr-10 mb-10">
-        <img
+        <Image
           src="/tech-professional.jpg"
           alt="Professional logistics management"
+          width={400}
+          height={400}
           className="rounded-2xl shadow-xl w-screen h-auto"
         />
       </div>
