@@ -162,8 +162,8 @@
   }
   
   .gradient-hero {
-    background: black;
-    /* background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--primary-lighter)) 100%); */
+    /* background: black; */
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--primary-lighter)) 100%);
   }
   
   .text-gradient {
