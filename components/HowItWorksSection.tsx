@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { steps } from './data';
+import Image from 'next/image';
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="py-16 lg:py-24 bg-background">
@@ -14,33 +15,34 @@ const HowItWorksSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-16">
           {steps.map((step, index) => (
             <Card
               key={index}
-              className="relative bg-card hover:shadow-lg transition-all duration-300 animate-slide-up"
+              className="relative hover:shadow-lg bg-black border-none transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardContent className="p-6 text-center">
+              <CardContent className="p-0">
                 {/* Step number */}
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">
-                    {step.number}
-                  </div>
-                </div>
-
-                {/* Icon */}
-                <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center mt-4">
-                  <step.icon className="w-8 h-8 text-primary" />
+                <div className="w-full h-[60vh] mb-4 bg-primary/10 flex items-center justify-center">
+                  <Image
+                    src={step.src}
+                    alt={step.title}
+                    width={600}
+                    height={600}
+                    className="w-full h-full border-white shadow-md"
+                  />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-foreground mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-muted-foreground">
-                  {step.description}
-                </p>
+                <div className="p-6">
+                  <h3 className="text-3xl font-bold text-white font-semibold  mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-white">
+                    {step.description}
+                  </p>
+                </div>
               </CardContent>
             </Card>
           ))}

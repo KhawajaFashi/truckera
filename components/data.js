@@ -99,24 +99,28 @@ export const truckImages = [
 export const steps = [
     {
         icon: Search,
+        src: "/img.jpg",
         title: "Get Matched with Loads",
         description: "Our intelligent system matches you with the best available loads based on your preferences and location.",
         number: "01"
     },
     {
         icon: UserCheck,
+        src: "/img.jpg",
         title: "Assign Drivers",
         description: "Easily assign qualified drivers to loads with our streamlined driver management system.",
         number: "02"
     },
     {
         icon: MapPin,
+        src: "/img.jpg",
         title: "Real-Time Tracking",
         description: "Monitor your fleet in real-time with live GPS tracking and automated status updates.",
         number: "03"
     },
     {
         icon: CreditCard,
+        src: "/img.jpg",
         title: "Automated Billing",
         description: "Handle invoicing and payments automatically with our integrated billing system.",
         number: "04"
