@@ -6,7 +6,7 @@ const AboutSection = () => {
   const features = aboutFeatures;
 
   return (
-    <section id="about" className="flex justify-center items-center py-16 lg:py-24 px-10  lg:px-32 bg-background ">
+    <section id="about" className="flex justify-center items-center py-16 lg:py-24 px-10  lg:px-32 bg-background max-lg:flex-col">
       {/* Image */}
       <div className="animate-fade-in lg:mr-10 mb-10">
         <Image
@@ -14,7 +14,7 @@ const AboutSection = () => {
           alt="Professional logistics management"
           width={400}
           height={400}
-          className="rounded-2xl shadow-xl w-screen h-auto"
+          className="rounded-2xl shadow-xl w-screen h-auto 2xl:w-[80vw] 3xl:w-[50vw]"
         />
       </div>
       {/* Content */}
@@ -37,7 +37,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-4">
           {features.map((feature, index) => (
             <Card key={index} className="border-border hover:shadow-md transition-shadow">
-              <CardContent className="px-3">
+              <CardContent className="p-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <feature.icon className="w-5 h-5 text-primary" />
