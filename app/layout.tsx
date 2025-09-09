@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local';
 
-const euorope_font = localFont({
+const ubranist_font = localFont({
   src: [
     {
-      path: './Fonts/EuropaGrotesk.ttf',
-      style: "normal",
-      weight: "400",
+      path: './Fonts/Urbanist-VariableFont_wght.ttf',
+      style: "SemiBold",
+      weight: "600",
     }
   ],
-  variable: '--font-euorope',
+  variable: '--font-ubranist',
 });
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${euorope_font.variable} antialiased`}
+        className={`${ubranist_font.variable} antialiased`}
       >
         {children}
       </body>

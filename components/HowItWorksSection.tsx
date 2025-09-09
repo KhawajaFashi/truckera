@@ -24,7 +24,7 @@ const HowItWorksSection = () => {
             >
               <CardContent className="p-0">
                 {/* Step number */}
-                <div className="w-full h-[60vh] mb-4 bg-primary/10 flex items-center justify-center">
+                <div className="w-full h-[60vh] bg-primary/10 flex items-center justify-center">
                   <Image
                     src={step.src}
                     alt={step.title}
@@ -35,8 +35,8 @@ const HowItWorksSection = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
-                  <h3 className="text-3xl font-bold text-white font-semibold  mb-3">
+                <div className="p-7">
+                  <h3 className="text-3xl font-bold text-white font-semibold mb-3">
                     {step.title}
                   </h3>
                   <p className="text-white">

@@ -21,7 +21,7 @@ const AboutSection = () => {
       <div className="animate-slide-up max-w-screen">
         {/* <div className="max-w-xl"> */}
         <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-          About <span className="text-gradient">Dispatchers</span>
+          About Dispatchers
         </h2>
         <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
           Dispatchers is a tech-driven dispatching solution designed specifically for freight

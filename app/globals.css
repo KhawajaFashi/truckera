@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 @config "../tailwind.config.ts";
 
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap'); */
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -156,18 +157,20 @@
 
   /* Custom gradients and effects */
   .gradient-primary {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
-    /* background: black; */
+    /* background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%); */
+    background: black;
   }
-
+  
   .gradient-hero {
-    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--primary-lighter)) 100%);
+    background: black;
+    /* background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--primary-lighter)) 100%); */
   }
-
+  
   .text-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    background: black;
+    /* background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     background-clip: text;
   }
 
