@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { steps } from './data';
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="py-16 lg:py-24 bg-secondary/30">
+    <section id="how-it-works" className="py-16 lg:py-24 bg-background">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">

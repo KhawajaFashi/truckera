@@ -20,13 +20,13 @@ const HeroSection = () => {
         <div className="absolute inset-0 gradient-hero opacity-15"></div>
       </div>
 
-      <div className="mx-auto px-6 lg:px-16 relative z-10 md:py-2 py-16 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center justify-center">
+      <div className="mx-auto px-6 lg:px-16 relative z-10 md:py-2 py-16 h-full w-screen flex items-center justify-center">
+        <div className="">
           {/* Content */}
           <div className="animate-fade-in">
             <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Reliable Truck Dispatching,{" "}
-              <span className="text-gradient">Simplified</span>
+              Reliable Truck{" "}
+              <span className="text-gradient">Dispatching</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed">
               We move loads, so you don&apos;t have to. Dispatching made simple for owner-operators
@@ -43,23 +43,6 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-
-          {/* Hero Image - Hidden on mobile for video focus */}
-          {/* <div className="hidden lg:block">
-            <div className="relative">
-              <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 w-[70%]"></div>
-              <div className="relative p-8 rounded-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  src="/hero-vid.mp4"
-                  className="w-[70%] h-[50%] object-cover rounded-3xl opacity-90"
-                />
-              </div>
-            </div> */}
-          {/* </div> */}
         </div>
       </div>
     </section>
