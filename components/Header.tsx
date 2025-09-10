@@ -52,9 +52,6 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-
-          {/* Desktop CTA */}
-         
         </div>
 
         {/* Mobile Navigation */}

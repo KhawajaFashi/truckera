@@ -115,7 +115,7 @@ const ContactSection = () => {
           {/* CTA Form */}
           <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20 shadow-xl">
-              <CardContent className="px-8 py-2">
+              <CardContent className="px-8 py-8">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-foreground mb-4">
                     Start Your Free Trial

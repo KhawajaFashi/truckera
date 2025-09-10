@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -25,22 +26,19 @@ const HeroSection = () => {
           {/* Content */}
           <div className="animate-fade-in">
             <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Reliable Truck{" "}
-              <span className="text-gradient">Dispatching</span>
+              Turning miles into money
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed">
               We move loads, so you don&apos;t have to. Dispatching made simple for owner-operators
               and fleet managers with real-time tracking, load matching, and 24/7 support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="#contact">
               <Button size="lg" className="gradient-primary text-white px-8 py-3 text-lg group">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button size="lg" variant="outline" className="px-8 py-3 text-lg group border-white hover:bg-white hover:text-secondary">
-                <Play className="mr-2 h-5 w-5" />
-                Watch Demo
-              </Button>
+              </Link>
             </div>
           </div>
         </div>
