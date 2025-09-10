@@ -1,8 +1,42 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
+
 
 const ContactSection = () => {
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { id, value } = e.target;
+    setForm((prev) => ({ ...prev, [id]: value }));
+  };
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      // Optionally reset form or show success message here
+    } catch (error) {
+      // Optionally handle error here
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-16 lg:py-24 bg-secondary/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,7 +125,7 @@ const ContactSection = () => {
                   </p>
                 </div>
 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
@@ -100,8 +134,11 @@ const ContactSection = () => {
                       <input
                         type="text"
                         id="firstName"
+                        value={form.firstName}
+                        onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                         placeholder="John"
+                        required
                       />
                     </div>
                     <div>
@@ -111,8 +148,11 @@ const ContactSection = () => {
                       <input
                         type="text"
                         id="lastName"
+                        value={form.lastName}
+                        onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                         placeholder="Doe"
+                        required
                       />
                     </div>
                   </div>
@@ -124,41 +164,38 @@ const ContactSection = () => {
                     <input
                       type="email"
                       id="email"
+                      value={form.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                       placeholder="john@company.com"
+                      required
                     />
                   </div>
                   
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                      Company Name
+                      Phone Number
                     </label>
                     <input
                       type="text"
-                      id="company"
+                      id="phone"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      value={form.phone}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                      placeholder="Your Trucking Company"
+                      placeholder="123-456-7890"
+                      required
                     />
                   </div>
                   
-                  <div>
-                    <label htmlFor="fleetSize" className="block text-sm font-medium text-foreground mb-2">
-                      Fleet Size
-                    </label>
-                    <select
-                      id="fleetSize"
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    >
-                      <option value="">Select fleet size</option>
-                      <option value="1-5">1-5 trucks</option>
-                      <option value="6-20">6-20 trucks</option>
-                      <option value="21-50">21-50 trucks</option>
-                      <option value="50+">50+ trucks</option>
-                    </select>
-                  </div>
 
-                  <Button size="lg" className="w-full gradient-primary text-white py-4 text-lg font-semibold">
-                    Start Free Trial
+                  <Button
+                    size="lg"
+                    className="w-full gradient-primary text-white py-4 text-lg font-semibold"
+                    type="submit"
+                    disabled={loading}
+                  >
+                    {loading ? "Sending..." : "Start Free Trial"}
                   </Button>
                   
                   <p className="text-center text-sm text-muted-foreground">
