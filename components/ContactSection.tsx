@@ -38,91 +38,16 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-secondary/5">
+    <section id="contact" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-            Start Dispatching <span className="text-gradient">Smarter</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to streamline your operations? Get in touch with our dispatch experts 
-            and discover how we can transform your trucking business.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Information */}
-          <div className="space-y-8 animate-slide-up">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h3>
-              <p className="text-muted-foreground mb-8">
-                Our team of dispatch professionals is available 24/7 to support your operations. 
-                Whether you need immediate assistance or want to learn more about our services,
-                we&apos;re here to help.
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-6">
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 group">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Phone className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">Call Us</h4>
-                  <p className="text-muted-foreground text-sm mb-2">24/7 Support Line</p>
-                  <p className="text-primary font-semibold">+1 (555) 123-4567</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 group">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Mail className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">Email Us</h4>
-                  <p className="text-muted-foreground text-sm mb-2">Quick Response</p>
-                  <p className="text-primary font-semibold">support@dispatchers.com</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 group">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <MapPin className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">Visit Us</h4>
-                  <p className="text-muted-foreground text-sm mb-2">Main Office</p>
-                  <p className="text-primary font-semibold">123 Logistics Ave, Miami, FL</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 group">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">Hours</h4>
-                  <p className="text-muted-foreground text-sm mb-2">Always Available</p>
-                  <p className="text-primary font-semibold">24/7 Operations</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Quick Stats */}
-            
-          </div>
-
           {/* CTA Form */}
           <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20 shadow-xl">
               <CardContent className="px-8 py-8">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-foreground mb-4">
-                    Start Your Free Trial
+                    Get In Touch
                   </h3>
-                  <p className="text-muted-foreground">
-                    Experience our platform risk-free for 14 days. No credit card required.
-                  </p>
                 </div>
 
                 <form className="space-y-6" onSubmit={handleSubmit}>
@@ -195,7 +120,7 @@ const ContactSection = () => {
                     type="submit"
                     disabled={loading}
                   >
-                    {loading ? "Sending..." : "Start Free Trial"}
+                    {loading ? "Sending..." : "Submit"}
                   </Button>
                   
                   <p className="text-center text-sm text-muted-foreground">
@@ -205,7 +130,6 @@ const ContactSection = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
       </div>
     </section>
   );

@@ -88,12 +88,12 @@ export const features = [
 ];
 
 export const truckImages = [
-    { src: "/truck-cargo.jpg", alt: "Cargo Truck" },
-    { src: "/truck-delivery.jpg", alt: "Delivery Truck" },
-    { src: "/truck-semi.jpg", alt: "Semi Truck" },
-    { src: "/truck-lorry.jpg", alt: "Lorry Truck" },
-    { src: "/truck-flatbed.jpg", alt: "Flatbed Truck" },
-    { src: "/truck-box.jpg", alt: "Box Truck" }
+    { src: "/truck-hotshot.jpg", alt: "Cargo Truck" },
+    { src: "/truck-dry-van.jpg", alt: "Delivery Truck" },
+    { src: "/truck-flat-bed.jpg", alt: "Semi Truck" },
+    { src: "/truck-power.jpg", alt: "Lorry Truck" },
+    { src: "/truck-step-deck.jpg", alt: "Flatbed Truck" },
+    { src: "/truck-reefer.jpg", alt: "Box Truck" }
 ];
 
 export const steps = [
