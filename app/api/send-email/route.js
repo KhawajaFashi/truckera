@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
     try {
-        const { firstName, lastName, email, company, fleetSize } = await req.json();
+        const { firstName, lastName, email, phone, truckType } = await req.json();
 
         const transporter = nodemailer.createTransport({
             service: "gmail",
@@ -17,13 +17,13 @@ export async function POST(req) {
 
         const mailOptions = {
             from: 'fashi449623@gmail.com',
-            to: "ammar449623@gmail.com",
+            to: "fashishaukat9623@gmail.com",
             subject: "New Truck Dispatch Request",
             text: `New customer request:\n\n
         Name: ${firstName} ${lastName}
         Email: ${email}
-        Company Name: ${company}
-        Fleet Size: ${fleetSize}
+        Phone Number: ${phone}
+        Truck Type: ${truckType}
         `,
         };
 

@@ -11,7 +11,7 @@ const FeaturesSection = () => {
         {/* Main Features Layout */}
         <div className="flex flex-col gap-8 items-center justify-center mb-16">
           {/* Left: Feature descriptions */}
-          <div className="text-center mb-16 animate-fade-in w-[40%]">
+          <div className="text-center mb-16 animate-fade-in w-[90%] lg:w-[40%]">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
               Our Specialization
             </h2>
@@ -24,11 +24,11 @@ const FeaturesSection = () => {
 
           {/* Right: Truck images grid */}
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-col-1 lg:grid-cols-2 gap-6">
             {truckImages.map((truck, index) => (
               <div
                 key={index}
-                className="relative rounded-xl overflow-hidden shadow-lg w-[40vw] h-48 flex items-center justify-start text-white cursor-pointer group"
+                className="relative rounded-xl overflow-hidden shadow-lg lg:w-[40vw] w-[90vw] h-48 flex items-center justify-start text-white cursor-pointer group"
                 style={{
                   animationDelay: `${(index + 4) * 0.5}s`,
                   backgroundImage: `url(${truck.src})`,

@@ -1,4 +1,4 @@
-import { Truck, Linkedin, Twitter, Facebook, Mail, Phone } from "lucide-react";
+import { Truck, Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -70,7 +70,7 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <div className="space-y-3 text-foreground/70">
+            <div className="space-y-4 text-foreground/70">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />
                 <span>(555) 123-DISPATCH</span>
@@ -79,9 +79,9 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>contact@dispatchers.com</span>
               </div>
-              <div className="pt-2">
-                <p className="text-sm">123 Logistics Drive</p>
-                <p className="text-sm">Atlanta, GA 30309</p>
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-4 h-4" />
+                <span className="text-sm">1001 S. Main St. STE 500 <br /> Kalispell, MT 5990</span>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-foreground/70 text-sm">
-              © 2024 Dispatchers. All rights reserved.
+              © 2025 Kargoas. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-foreground/70">
               <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>

@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'glass-effect mx-4 mt-4 lg:rounded-2xl rounded-xl border border-border/60 shadow-2xl'
+          ? 'glass-effect mx-4 mt-4 rounded-full border border-border/60 shadow-2xl'
           : 'border-b border-border/70 backdrop-blur-md shadow-lg'
         }`}
     >
