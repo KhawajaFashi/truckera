@@ -22,7 +22,7 @@ export default function HeroVideo() {
             className="w-full h-full object-cover"
             ref={videoRef}
         >
-            <source src="/hero-sec-vid.mp4" type="video/mp4" />
+            <source src="/hero.mp4" type="video/mp4" />
         </video>
     );
 }

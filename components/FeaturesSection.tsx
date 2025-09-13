@@ -30,18 +30,21 @@ const FeaturesSection = () => {
                 key={index}
                 className="relative rounded-xl overflow-hidden shadow-lg w-[40vw] h-48 flex items-center justify-start text-white cursor-pointer group"
                 style={{
-                  animationDelay: `${(index + 4) * 0.1}s`,
+                  animationDelay: `${(index + 4) * 0.5}s`,
                   backgroundImage: `url(${truck.src})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               >
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent group-hover:from-red-600/80 group-hover:via-red-600/50 group-hover:to-transparent transition-all duration-300"></div>
+                {/* Black gradient (default) */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500"></div>
+
+                {/* Red gradient (hover) */}
+                <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-red-600/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Content */}
                 <div className="relative z-10 p-4 text-center">
-                  <h4 className="font-bold text-">{truck.alt}</h4>
+                  <h4 className="font-bold text-2xl">{truck.alt}</h4>
                 </div>
               </div>
 

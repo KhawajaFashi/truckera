@@ -1,4 +1,5 @@
 import { Truck, Linkedin, Twitter, Facebook, Mail, Phone } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -8,32 +9,32 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-background text-foreground rounded-lg flex items-center justify-center">
-                <Truck className="w-5 h-5" />
+              <div className="w-14 h-14">
+                <Image src="/logo.png" alt="Kargoas Logo" width={500} height={500} className="w-full h-full" />
               </div>
-              <span className="text-xl font-bold">Dispatchers</span>
+              <span className="text-xl font-bold">Kargoas</span>
             </div>
             <p className="text-foreground/70 leading-relaxed">
-              Reliable truck dispatching services that simplify logistics operations 
+              Reliable truck dispatching services that simplify logistics operations
               for drivers and fleet managers nationwide.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-10 h-10 bg-foreground/10 rounded-lg flex items-center justify-center hover:bg-background/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-10 h-10 bg-foreground/10 rounded-lg flex items-center justify-center hover:bg-background/20 transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-10 h-10 bg-foreground/10 rounded-lg flex items-center justify-center hover:bg-background/20 transition-colors"
                 aria-label="Facebook"
               >

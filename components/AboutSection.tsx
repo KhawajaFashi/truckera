@@ -21,16 +21,19 @@ const AboutSection = () => {
       <div className="animate-slide-up max-w-screen">
         {/* <div className="max-w-xl"> */}
         <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-          About Dispatchers
+          About Us
         </h2>
-        <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-          Dispatchers is a tech-driven dispatching solution designed specifically for freight
-          and trucking companies. We combine cutting-edge technology with industry expertise
-          to deliver transparent, efficient, and reliable dispatch services.
+        <p className="text-lg text-muted-foreground mb-2 leading-relaxed">
+          At KARGOAS, we believe every mile you drive should bring you closer to success. We know the hard work, long hours, and sacrifices that go into life on the road, and that’s why we’re here—to make sure your effort pays off.
+        </p>
+        <p className="text-lg text-muted-foreground mb-2 leading-relaxed">
+          Our job is simple: to keep your wheels turning and your income growing. From finding the best loads to handling negotiations and paperwork, we stand beside you every step of the way. We don’t just dispatch—we partner with you, so you can focus on driving while we take care of the rest.
+        </p>
+        <p className="text-lg text-muted-foreground mb-2 leading-relaxed">
+          With honesty, dedication, and respect for your time, we’re here to help you build the business and lifestyle you deserve.
         </p>
         <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-          Our platform emphasizes ease of use, complete transparency, and round-the-clock
-          support to help drivers and fleet managers focus on what they do best – moving freight safely and efficiently.
+          Turning Miles into Money.
         </p>
 
         {/* Feature grid */}
