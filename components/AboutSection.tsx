@@ -24,16 +24,16 @@ const AboutSection = () => {
           About Us
         </h2>
         <p className="text-lg text-muted-foreground mb-2 leading-relaxed">
-          At KARGOAS, we believe every mile you drive should bring you closer to success. We know the hard work, long hours, and sacrifices that go into life on the road, and that’s why we’re here—to make sure your effort pays off.
+          At KARGOAS, we believe every mile you drive should bring you closer to success. We know the hard work, long hours, and sacrifices that go into life on the road, and that&apos;s why we&apos;re here—to make sure your effort pays off.
         </p>
         <p className="text-lg text-muted-foreground mb-2 leading-relaxed">
-          Our job is simple: to keep your wheels turning and your income growing. From finding the best loads to handling negotiations and paperwork, we stand beside you every step of the way. We don’t just dispatch—we partner with you, so you can focus on driving while we take care of the rest.
+          Our job is simple: to keep your wheels turning and your income growing. From finding the best loads to handling negotiations and paperwork, we stand beside you every step of the way. We don&apos;t just dispatch—we partner with you, so you can focus on driving while we take care of the rest.
         </p>
         <p className="text-lg text-muted-foreground mb-2 leading-relaxed">
-          With honesty, dedication, and respect for your time, we’re here to help you build the business and lifestyle you deserve.
+          With honesty, dedication, and respect for your time, we&apos;re here to help you build the business and lifestyle you deserve.
         </p>
         <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-          Turning Miles into Money.
+          Turning Miles into Money.
         </p>
 
         {/* Feature grid */}
