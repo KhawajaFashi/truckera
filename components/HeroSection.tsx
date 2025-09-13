@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import HeroVideo from "./HeroVideo";
+import Image from "next/image";
 
 const HeroSection = () => {
 
@@ -9,7 +10,10 @@ const HeroSection = () => {
     <section id="home" className="relative pt-20 pb-16 lg:pt-32 lg:pb-24 overflow-hidden h-screen ">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <HeroVideo/>
+        <HeroVideo />
+        <div>
+          {/* <Image src={}/> */}
+        </div>
         <div className="absolute inset-0"></div>
         <div className="absolute inset-0 bg-foreground opacity-15"></div>
       </div>

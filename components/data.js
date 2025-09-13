@@ -1,11 +1,12 @@
 import {
     Search,
-    MapPin,
+    FileInput,
     FileText,
     Headphones,
+    Truck, 
     BarChart3,
-    UserCheck,
-    CreditCard,
+    Signature,
+    MapPin,
     Shield,
     Clock,
     Users,
@@ -88,41 +89,34 @@ export const features = [
 ];
 
 export const truckImages = [
-    { src: "/truck-hotshot.jpg", alt: "Cargo Truck" },
-    { src: "/truck-dry-van.jpg", alt: "Delivery Truck" },
-    { src: "/truck-flat-bed.jpg", alt: "Semi Truck" },
-    { src: "/truck-power.jpg", alt: "Lorry Truck" },
-    { src: "/truck-step-deck.jpg", alt: "Flatbed Truck" },
-    { src: "/truck-reefer.jpg", alt: "Box Truck" }
+    { src: "/1.jpg", alt: "Cargo Truck" },
+    { src: "/2.jpg", alt: "Delivery Truck" },
+    { src: "/3.jpg", alt: "Semi Truck" },
+    { src: "/4.jpg", alt: "Lorry Truck" },
+    { src: "/5.jpg", alt: "Flatbed Truck" },
+    { src: "/6.jpg", alt: "Box Truck" }
 ];
 
 export const steps = [
     {
-        icon: Search,
+        icon: Signature,
         src: "/img.jpg",
-        title: "Get Matched with Loads",
-        description: "Our intelligent system matches you with the best available loads based on your preferences and location.",
+        title: "Sign Agreement",
+        description: "Signed our open Dispatch Service Agreement, which allows you to leave at any time, all we ask for is two weeks notice.",
         number: "01"
     },
     {
-        icon: UserCheck,
+        icon: FileInput,
         src: "/img.jpg",
-        title: "Assign Drivers",
-        description: "Easily assign qualified drivers to loads with our streamlined driver management system.",
+        title: "Send us your documents",
+        description: "We require a copy of your driver's packet, which includes a copy of your insurance, driver's license, MC Authority letter, W-9 Form.",
         number: "02"
     },
     {
-        icon: MapPin,
+        icon: Truck,
         src: "/img.jpg",
-        title: "Real-Time Tracking",
-        description: "Monitor your fleet in real-time with live GPS tracking and automated status updates.",
+        title: "Start Hauling Loads",
+        description: "Once we have all the paperwork, you'll be introduced to your personal dispatcher and start work immediately.",
         number: "03"
     },
-    {
-        icon: CreditCard,
-        src: "/img.jpg",
-        title: "Automated Billing",
-        description: "Handle invoicing and payments automatically with our integrated billing system.",
-        number: "04"
-    }
 ];
