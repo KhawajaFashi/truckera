@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚛 Kargoas - Truck Dispatch Services
 
-## Getting Started
+Kargoas is a modern web platform for our truck dispatch company.  
+It allows customers to request dispatch services, connect with our team, and track operations seamlessly.
 
-First, run the development server:
+## 🌐 Live Website
+[https://kargoas.com](https://kargoas.com)
+
+---
+
+## 📌 Features
+- 📝 **Service Request Form** – Customers can fill out a form to request truck dispatch services.  
+- 📩 **Automated Email Notification** – Customers receive confirmation emails upon form submission.  
+- 📊 **Google Analytics Integration** – Track site visits and engagement.  
+- 📱 **Responsive Design** – Fully optimized for desktop and mobile users.  
+- 🔒 **SSL Secure (HTTPS)** – All traffic is encrypted for customer safety.  
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, React, Tailwind CSS  
+- **Backend**: Node.js (API routes with Next.js)  
+- **Email Service**: Nodemailer  
+- **Hosting**: Netlify  
+- **Analytics**: Google Analytics  
+
+---
+
+## 🚀 Getting Started (Development)
+
+1. **Clone the repo**
+```bash
+git clone https://github.com/your-username/kargoas.git
+cd kargoas
+```
+3. Install dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set environment variables
+Create a .env.local file in the root with:
+```
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_password
+GA_TRACKING_ID=G-XXXXXXXXXX
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run locally
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Site will be live at http://localhost:3000
 
-## Learn More
+## 📂 Project Structure
+```
+kargoas/
+ ├── app/                # Next.js app directory
+ ├── components/         # Reusable UI components
+ ├── public/             # Static assets (images, videos)
+ ├── pages/api/          # API routes (e.g. email sending)
+ ├── styles/             # Global styles (Tailwind)
+ └── README.md           # Project documentation
+```
+## 📧 Contact
 
-To learn more about Next.js, take a look at the following resources:
+For service inquiries or support, reach out at:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Email: support@kargoas.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Phone: +92-XXX-XXXXXXX
 
-## Deploy on Vercel
+## 📜 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is proprietary and owned by Kargoas Truck Dispatch Services.
+Unauthorized use, copying, or distribution is not permitted.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Do you want me to also create a **shorter customer-facing README** (like for non-technical clients or investors), or is this purely for **GitHub developers**?
