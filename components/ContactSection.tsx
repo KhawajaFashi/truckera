@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Card } from "@/components/ui/card";
 import { useState } from "react";
 
 
@@ -105,7 +104,7 @@ const ContactSection = () => {
                 </select>
                 <Button
                   size="lg"
-                  className="w-full bg-primary text-primary-foreground py-4 text-lg font-semibold rounded-xl shadow-lg hover:bg-primary/90 transition-colors"
+                  className="w-full cursor-pointer bg-primary text-primary-foreground py-4 text-lg font-semibold rounded-xl shadow-lg hover:bg-primary/90 transition-colors"
                   type="submit"
                   disabled={loading}
                 >

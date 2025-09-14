@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local';
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const ubranist_font = localFont({
   src: [
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${ubranist_font.variable} antialiased`}
       >
+        <GoogleAnalytics GA_ID="G-TK82WQBMRG" />
         {children}
       </body>
     </html>

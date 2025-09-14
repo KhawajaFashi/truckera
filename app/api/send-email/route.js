@@ -10,14 +10,14 @@ export async function POST(req) {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user: 'fashi449623@gmail.com', // use env instead of hardcoding
-                pass: 'smcz eeyr oxzz rdgv', // app password
+                user: process.env.sender_mail, // use env instead of hardcoding
+                pass: process.env.sender_password, // app password
             },
         });
 
         const mailOptions = {
-            from: 'fashi449623@gmail.com',
-            to: "fashishaukat9623@gmail.com",
+            from: process.env.sender_mail,
+            to: process.env.reciever_email,
             subject: "New Truck Dispatch Request",
             text: `New customer request:\n\n
         Name: ${firstName} ${lastName}
