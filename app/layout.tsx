@@ -30,6 +30,7 @@ export default function RootLayout({
         className={`${ubranist_font.variable} antialiased`}
       >
         <GoogleAnalytics GA_ID="G-TK82WQBMRG" />
+        <meta name="google-site-verification" content="GHLaxdZt2xhWfuYUvt8elUeKQF6r4Id4thCVdeQJLRQ" />
         {children}
       </body>
     </html>
