@@ -1,4 +1,4 @@
-import { Truck, Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {

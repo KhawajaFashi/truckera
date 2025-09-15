@@ -31,6 +31,7 @@ const ContactSection = () => {
       });
       // Optionally reset form or show success message here
     } catch (error) {
+      console.log("Error Occured: ", error)
       // Optionally handle error here
     } finally {
       setLoading(false);

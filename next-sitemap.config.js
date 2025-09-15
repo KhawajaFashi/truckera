@@ -1,5 +1,5 @@
 /** @type { import('next-sitemap').IConfig } */
-module.exports = {
+export default {
     siteUrl: 'https://www.davegray.codes/',
     exclude: ['/icon.svg', '/apple-icon.png', '/manifest.webmanifest', '/tags/*'],
     generateRobotsTxt: true,
