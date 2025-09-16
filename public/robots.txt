@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.davegray.codes/
+Host: https://www.kargoas.com/
 
 # Sitemaps
-Sitemap: https://www.davegray.codes/sitemap.xml
+Sitemap: https://www.kargoas.com/sitemap.xml

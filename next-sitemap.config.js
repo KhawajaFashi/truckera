@@ -1,6 +1,6 @@
 /** @type { import('next-sitemap').IConfig } */
 export default {
-    siteUrl: 'https://www.davegray.codes/',
+    siteUrl: 'https://www.kargoas.com/',
     exclude: ['/icon.svg', '/apple-icon.png', '/manifest.webmanifest', '/tags/*'],
     generateRobotsTxt: true,
     generateIndexSitemap: false,
