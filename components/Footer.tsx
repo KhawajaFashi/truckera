@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Facebook, Mail, MapPin } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Mail, MapPin, Phone } from "lucide-react";
 import { FaWhatsapp } from 'react-icons/fa';
 import Image from "next/image";
 
@@ -75,6 +75,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <FaWhatsapp className="w-4 h-4" />
                 <span>+1 (812) 778-6967</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-4 h-4" />
+                <span>+1 406-625-4587</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4" />
