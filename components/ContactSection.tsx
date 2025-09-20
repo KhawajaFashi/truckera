@@ -23,6 +23,7 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    console.log("form: ", form)
     try {
       await fetch("/api/send-email", {
         method: "POST",
@@ -93,9 +94,12 @@ const ContactSection = () => {
                 />
                 <select
                   id="truckType"
+                  value={form.truckType}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                  required
                 >
-                  <option value="default">Select Truck Type</option>
+                  <option value="">Select Truck Type</option>
                   <option value="dry-van">Dry Van</option>
                   <option value="flat-bed">Flat Bed</option>
                   <option value="power">Power Only</option>
